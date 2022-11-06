@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: second
+
+#File 1 or version 1
+firstname: MgMg
+lastname: Kyaw
+email: mmk@gmail.com
+active: true
+fields: Java,Python,PHP,Swift,Flutter
+---
+#File 2 or version 2
+spring:
+  config:
+    activate:
+      on-profile: second
+
+firstname: Kyaw
+lastname: Aung
+email: ka@gmail.com
+active: true
+fields: Java,Python,PHP,Swift,Flutter
